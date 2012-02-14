@@ -33,6 +33,7 @@ alias et='easytag'
 alias srename="serien-rename"
 alias rs='record-skype'
 alias rlog='tail /var/log/rsnapshot.log'
+alias custom='cd $ZSH/custom/'
 
 # SSH tunnels
 alias dyntunnel='ssh -L 8000:localhost:9443 menski@solab09 -N'
