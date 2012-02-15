@@ -33,8 +33,7 @@ alias temp="cat /proc/acpi/ibm/thermal | awk '{print \"CPU:\"\$2\"/\"\$4\"°C\";
 
 # App shortcuts
 alias et='easytag'
-#alias srename="serien-rename"
-alias srename='filebot --format "{n} - {s00e00} - {t}" -get-missing-subtitles --lang en -rename'
+alias srename='filebot --format "/mnt/bay/videos/serien/{n}/Season {s.pad(2)}/{n} - {s00e00} - {t}" -rename'
 alias rs='record-skype'
 alias rlog='tail /var/log/rsnapshot.log'
 alias custom='cd $ZSH/custom/'
