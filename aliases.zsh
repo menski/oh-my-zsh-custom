@@ -20,11 +20,18 @@ alias mvm='mv -v -t ~/Musik'
 alias mvs='mv -v -t ~/Videos/serien'
 alias mv720='mv -v -t ~/Videos/filme/720p'
 alias mv1080='mv -v -t ~/Videos/filme/1080p'
+alias vmv='vmv -g'
+alias vcp='vcp -g'
+
+alias grep='grep -i'
 
 alias x='exit'
 
 # apt
 alias au='sudo apt-get update && sudo apt-get dist-upgrade'
+
+# mutt
+alias mutty='mutt -y'
 
 # Thinkpad
 alias bat='sudo tlp-stat | grep BAT'

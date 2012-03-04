@@ -41,3 +41,4 @@ export TERM=xterm-256color
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+fpath=($ZSH/custom/completions $fpath)
