@@ -10,6 +10,7 @@ alias se='sudo $EDITOR'
 alias eawesome='$EDITOR ~/.config/awesome/rc.lua'
 
 # coreutils
+ls --color -d . &>/dev/null 2>&1 && alias ls='ls -F --color=tty' || alias ls='ls -F -G'
 alias la='ls -a'
 alias llh='ll -h'
 alias lh='l -h'
@@ -41,6 +42,7 @@ alias temp="cat /proc/acpi/ibm/thermal | awk '{print \"CPU:\"\$2\"/\"\$4\"°C\";
 # App shortcuts
 alias et='easytag'
 alias srename='filebot --format "/mnt/bay/videos/serien/{n}/Season {s.pad(2)}/{n} - {s00e00} - {t}" -rename'
+alias sbackup='filebot --format "/media/ext/serien/{n}/Season {s.pad(2)}/{n} - {s00e00} - {t}" -rename'
 alias rs='record-skype'
 alias rlog='tail /var/log/rsnapshot.log'
 alias custom='cd $ZSH/custom/'

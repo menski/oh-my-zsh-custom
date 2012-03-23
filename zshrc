@@ -36,9 +36,12 @@ plugins=(git github command-not-found studium svn)
 export EDITOR=/usr/bin/vim
 export SVN_EDITOR=/usr/bin/vim
 export PYTHONSTARTUP=~/.pystartup
-export TERM=xterm-256color
+# export TERM=xterm-256color
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 fpath=($ZSH/custom/completions $fpath)
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
