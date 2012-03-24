@@ -34,6 +34,7 @@ plugins=(git github command-not-found studium svn)
 
 # Export env vars
 export EDITOR=/usr/bin/vim
+export PAGER=/usr/bin/less
 export SVN_EDITOR=/usr/bin/vim
 export PYTHONSTARTUP=~/.pystartup
 # export TERM=xterm-256color

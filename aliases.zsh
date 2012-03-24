@@ -3,14 +3,18 @@ alias szsh='source ~/.zshrc'
 alias ezsh='$EDITOR ~/.zshrc'
 alias ealias='$EDITOR $ZSH/custom/aliases.zsh'
 
-# Editor
+# edit, read, open files
+alias v=$PAGER
+alias e=$EDITOR
 alias se='sudo $EDITOR'
+alias open='xdg-open'
 
 # Awesome WM
 alias eawesome='$EDITOR ~/.config/awesome/rc.lua'
 
 # coreutils
-ls --color -d . &>/dev/null 2>&1 && alias ls='ls -F --color=tty' || alias ls='ls -F -G'
+# ls --color -d . &>/dev/null 2>&1 && alias ls='ls -F --color=tty' || alias ls='ls -F -G'
+alias ls='ls -F --color=auto'
 alias la='ls -a'
 alias llh='ll -h'
 alias lh='l -h'
@@ -47,6 +51,9 @@ alias rs='record-skype'
 alias rlog='tail /var/log/rsnapshot.log'
 alias custom='cd $ZSH/custom/'
 alias personal='vim ~/Dokumente/personal.otl'
+alias scp='rsync --rsh=ssh -arvP'
+alias sloc='cloc --by-file-by-lang --exculde-dir=.git,.svn'
+alias diff='colordiff -u'
 
 # SSH tunnels
 alias dyntunnel='ssh -L 8000:localhost:9443 menski@solab09 -N'
