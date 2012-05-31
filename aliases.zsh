@@ -76,8 +76,17 @@ for t in odt ods odp odg doc docx xls xlsx ppt pptx; do
 done
 
 # xdg-open misc files
-for t in pdf ps dvi eps jpg png gif bmp tiff avi mpeg mp3 mp4 ogg ogv m4b m4a flv mkv; do
+for t in pdf ps dvi eps jpg jpeg png gif bmp tiff avi mpeg mp3 mp4 ogg ogv m4b m4a flv mkv wmv; do
 	for i in $t ${(U)t}; do
 		alias -s $i='xdg-open > /dev/null 2>&1'
 	done
 done
+
+# function
+
+# svndiff - colored svn diff
+
+svndiff()
+{
+  svn diff "${@}" | colordiff
+}
